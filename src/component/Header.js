@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const pages = ["Home", "Resume", "Contact", "idk", "some more options", "hello"]
+const pages = ["Home", "About Me", "Portfolio", "Contact", "Resume"];
+// const [currentPage, setCurrentPage] = useState("Home");
+
+// const highlightPage = () => {
+//     setCurrentPage(item);
+//     // add css attribute to <li>
+// }
 
 const Header = () => {
     return (
@@ -9,6 +15,7 @@ const Header = () => {
             <nav>
                 {/* maps through the pages and lists them */}
                 {pages.map(item => (
+                    // <li onClick={highlightPage}>{item}</li>
                     <li>{item}</li>
                 ))}
             </nav>
