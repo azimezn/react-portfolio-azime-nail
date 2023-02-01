@@ -12,16 +12,14 @@ const Header = ({ handlePageChange }) => {
             <Nav className="justify-content-center" activeKey="/home">
                 {/* maps through the pages and lists them */}
                 {pages.map(item => (
-                    <Nav>
+                    <Nav.Item>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                        <Nav.Link onClick={() => handlePageChange({ item })}>{item}</Nav.Link>
-                    </Nav>
+                        <Nav.Link onClick={() => handlePageChange( item )}>{item}</Nav.Link>
+                    </Nav.Item>
                 ))}
             </Nav>
         </div>
     )
 }
-
-
 
 export default Header

@@ -14,8 +14,11 @@ function App() {
     <>
       <Header handlePageChange={handlePageChange} />
       {/* if currentPage is equal to Home, then go to Home */}
+      {console.log(currentPage)}
       {currentPage === "Home" && <Home />}
-      <currentPage />
+      {currentPage === "About" && <About />}
+      {currentPage === "Contact" && <Contact />}
+      {currentPage === "Resume" && <Resume />}
       <Footer />
     </>
   );
