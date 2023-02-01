@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Header, Home, Footer } from './component'
-
-// const pages = ["Home", "AboutMe", "Portfolio", "Contact", "Resume"];
+import { Header, Home, About, Contact, Resume, Footer } from './component'
 
 function App() {
 
   const [currentPage, setCurrentPage] = useState("Home");
 
-  const handlePageChange = (abc) => {
-    setCurrentPage(abc);
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
   }
 
   return (
