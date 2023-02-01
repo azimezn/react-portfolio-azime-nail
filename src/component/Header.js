@@ -9,7 +9,7 @@ const Header = ({ handlePageChange }) => {
     return (
         <div>
             <h1>Azime Nail</h1>
-            <Nav className="justify-content-center" activeKey="/home">
+            <Nav className="justify-content-center">
                 {/* maps through the pages and lists them */}
                 {pages.map(item => (
                     <Nav.Item>
