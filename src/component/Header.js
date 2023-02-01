@@ -1,26 +1,25 @@
 import React, { useState } from 'react';
+// bootstrap imports
+import Nav from 'react-bootstrap/Nav';
 
-const pages = ["Home", "About Me", "Portfolio", "Contact", "Resume"];
-// const [currentPage, setCurrentPage] = useState("Home");
+const pages = ["Home", "About", "Portfolio", "Contact", "Resume"];
 
-// const highlightPage = () => {
-//     setCurrentPage(item);
-//     // add css attribute to <li>
-// }
-
-const Header = () => {
+const Header = ({ handlePageChange }) => {
     return (
         <div>
             <h1>Azime Nail</h1>
-            <nav>
+            <Nav className="justify-content-center" activeKey="/home">
                 {/* maps through the pages and lists them */}
                 {pages.map(item => (
-                    // <li onClick={highlightPage}>{item}</li>
-                    <li>{item}</li>
+                    <Nav.Item>
+                        <Nav.Link onClick={() => handlePageChange({item})}>{item}</Nav.Link>
+                    </Nav.Item>
                 ))}
-            </nav>
+            </Nav>
         </div>
     )
 }
+
+
 
 export default Header
