@@ -8,7 +8,7 @@ const About = ({ setCurrentPage }) => {
   const [nopeButton, setNopeButton] = useState(false);
 
   return (
-    <div className="aboutme">
+    <div className="aboutme container">
       <h2>About Me</h2>
       <img className="recent-photo" src={recentPhoto} alt="Azime" />
       <section>

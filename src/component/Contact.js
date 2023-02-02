@@ -32,7 +32,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="contact">
+    <div className="contact container">
       <h2>Contact</h2>
       <Form className="form login-form ">
         <Form.Group as={Row} className="mb-3">

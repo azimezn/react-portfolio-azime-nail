@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 
 const Portfolio = () => {
   return (
-    <div className="portfolio">
+    <div className="portfolio container">
       <h2>Portfolio</h2>
       <Container>
         <Row>
