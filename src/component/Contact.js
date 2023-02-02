@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+//bootstrap
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 
 const Contact = () => {
 
@@ -27,30 +32,36 @@ const Contact = () => {
   }
 
   return (
-    <div>
+    <div className="contact">
       <h2>Contact</h2>
-      {/* {error && <h1>GIANT ERROR</h1>} */}
-      {/* {error && <h1>{errorMessage}</h1>} */}
-      <form className="form login-form">
-        <div>
-          <label>name:</label>
-          <input className="form-input" type="text" name="name" onChange={handleChange} onBlur={handleBlur} required />
+      <Form className="form login-form ">
+        <Form.Group as={Row} className="mb-3">
+          <Form.Label column sm={1}>name:</Form.Label>
+          <Col sm={2}>
+            <Form.Control className="form-input" type="text" name="name" onChange={handleChange} onBlur={handleBlur} required />
+          </Col>
           {error.show && error.name == "name" && <h1>{error.message}</h1>}
-        </div>
-        <div>
-          <label>email:</label>
-          <input className="form-input" type="email" name="email" onChange={handleChange} onBlur={handleBlur} required />
+        </Form.Group>
+        <Form.Group as={Row} className="mb-3">
+          <Form.Label column sm={1}>email:</Form.Label>
+          <Col sm={2}>
+            <Form.Control className="form-input" type="email" name="email" onChange={handleChange} onBlur={handleBlur} required />
+          </Col>
           {error.show && error.name == "email" && <h1>{error.message}</h1>}
-        </div>
-        <div>
-          <label>message:</label>
-          <textarea className="form-input" type="text" name="message" onChange={handleChange} onBlur={handleBlur} required />
+        </Form.Group>
+        <Form.Group as={Row} className="mb-3">
+          <Form.Label column sm={1}>message:</Form.Label>
+          <Col sm={2}>
+            <Form.Control as="textarea" className="form-input" type="text" name="message" onChange={handleChange} onBlur={handleBlur} required />
+          </Col>
           {error.show && error.name == "message" && <h1>{error.message}</h1>}
-        </div>
-        <div>
-          <button className="btn btn-primary" type="submit">submit</button>
-        </div>
-      </form>
+        </Form.Group>
+        <Form.Group as={Row} className="mb-3">
+        <Col>
+          <Button type="submit">submit</Button>
+          </Col>
+        </Form.Group>
+      </Form>
 
     </div>
   )

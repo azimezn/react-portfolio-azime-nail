@@ -1,5 +1,4 @@
 import Header from './Header';
-import Home from './Home';
 import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
@@ -7,4 +6,4 @@ import Resume from './Resume';
 import Footer from './Footer';
 
 
-export { Header, Home, About, Portfolio, Contact, Resume, Footer }
+export { Header, About, Portfolio, Contact, Resume, Footer }

@@ -2,7 +2,7 @@ import React from 'react';
 // bootstrap
 import Nav from 'react-bootstrap/Nav';
 
-const pages = ["Home", "About", "Portfolio", "Contact", "Resume"];
+const pages = ["About", "Portfolio", "Contact", "Resume"];
 
 const Header = ({ currentPage, setCurrentPage }) => {
     return (

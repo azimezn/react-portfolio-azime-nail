@@ -11,7 +11,7 @@ import Col from 'react-bootstrap/Col';
 
 const Portfolio = () => {
   return (
-    <div>
+    <div className="portfolio">
       <h2>Portfolio</h2>
       <Container>
         <Row>

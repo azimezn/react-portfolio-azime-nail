@@ -5,10 +5,10 @@ import Button from 'react-bootstrap/Button';
 
 const About = ({ setCurrentPage }) => {
   return (
-    <div>
+    <div className="aboutme">
       <h2>About Me</h2>
       <img className="recent-photo" src={recentPhoto} alt="Azime" />
-      <section className="bio">
+      <section>
         <p>My name is Azime Nail. I'm Turkish-American. I started getting interested in high school with a coding class
           and I have coded programs for experiments during college. I also had a career in teaching ESL in Turkey, where
           I was the go to person for any problems, whether it be a tehcnical issue or they are just in need of a helping hand.

@@ -1,6 +1,12 @@
+/* :root {
+  --bg-color: #f9f1ec;
+  --purple-dark: #956bc6;
+  --purple-light: #d9c1e7;
+} */
+
 body {
   background: #f9f1ec !important;
-  padding: 30px;
+  /* padding: 30px; */
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -14,15 +20,39 @@ code {
     monospace;
 }
 
+header {
+  margin: 5px 0 0 0;
+}
+
 header h1 {
-  padding: 20px;
+  padding: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: relative;
   /* using a banner as a background image */
   background: url("./images/header-cartoon-lavender.jpg");
-  /* background-repeat: no-repeat; */
+  background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
+}
+
+footer {
+  padding: 10px;
+  background-color: #d9c1e7;
+}
+
+.nav {
+  background-color: #d9c1e7;
+}
+
+.icon {
+  width: 20%;
+}
+
+.aboutme,
+.portfolio,
+.contact,
+.resume {
+  margin: 20px;
 }
 
 .recent-photo {
@@ -34,14 +64,6 @@ header h1 {
   border: 5px;
   border-style: solid;
   border-color: var(--purple-dark);
-}
-
-/* .bio {
-  padding: 50px;
-} */
-
-.icon {
-  width: 20%;
 }
 
 .project-screenshots {

@@ -8,9 +8,9 @@ import Col from 'react-bootstrap/Col';
 
 const Footer = () => {
     return (
-        <div className="d-flex justify-content-center">
+        <footer>
             <Container>
-                <Row md={6}>
+                <Row>
                     {/* rel="noreferrer" is for security. it doesn't let the opened page get any information from the current page */}
                     <Col><a href="mailto:azimeznail@gmail.com" target="_blank" rel="noreferrer"><img className="icon" src={emailIcon} alt="email icon" /></a></Col>
                     <Col><a href="https://www.linkedin.com/in/azime-nail/" target="_blank" rel="noreferrer"><img className="icon" src={linkedinIcon} alt="linkedin icon" /></a></Col>
@@ -20,7 +20,7 @@ const Footer = () => {
                     <Col><a href="https://twitter.com/azimezn" target="_blank" rel="noreferrer"><img className="icon" src={twitterIcon} alt="twitter icon" /></a></Col>
                 </Row>
             </Container>
-        </div>
+        </footer>
     )
 }
 
