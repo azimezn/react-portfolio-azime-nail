@@ -75,22 +75,3 @@ footer {
 .project-screenshots:hover {
   border-color: lightblue;
 }
-
-.new-project,
-.old-project {
-  padding: 0 25px 15px 15px;
-  border: 5px dotted var(--purple-dark);
-  border-radius: 10px;
-  margin: 10px;
-}
-
-.new-project {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.old-project {
-  width: 28%;
-}
