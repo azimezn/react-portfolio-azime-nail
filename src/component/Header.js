@@ -1,24 +1,22 @@
-import React, { useState } from 'react';
-// bootstrap imports
+import React from 'react';
+// bootstrap
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 
 const pages = ["Home", "About", "Portfolio", "Contact", "Resume"];
 
-const Header = ({ handlePageChange }) => {
+const Header = ({ currentPage, setCurrentPage }) => {
     return (
-        <div>
-            <h1>Azime Nail</h1>
-            <Nav className="justify-content-center">
-                {/* maps through the pages and lists them */}
-                {pages.map(item => (
-                    <Nav.Item>
-                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                        <Nav.Link onClick={() => handlePageChange( item )}>{item}</Nav.Link>
-                    </Nav.Item>
-                ))}
-            </Nav>
-        </div>
+        <header>
+            <h1>Hi! I'm Azime Nail.</h1>
+                <Nav className="justify-content-center" activeKey={currentPage}>
+                    {/* maps through the pages and lists them */}
+                    {pages.map(item => (
+                        <Nav.Item>
+                            <Nav.Link onClick={() => setCurrentPage(item)}>{item}</Nav.Link>
+                        </Nav.Item>
+                    ))}
+                </Nav>
+        </header>
     )
 }
 

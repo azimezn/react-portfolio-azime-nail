@@ -4,17 +4,13 @@ import { Header, Home, About, Portfolio, Contact, Resume, Footer } from './compo
 
 function App() {
 
-  const [currentPage, setCurrentPage] = useState("Home");
-
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-  }
+  const [currentPage, setCurrentPage] = useState("About");
 
   return (
     <>
-      <Header handlePageChange={handlePageChange} />
+      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
       {/* if currentPage is equal to Home, then go to Home */}
-      {currentPage === "Home" && <Home />}
+      {currentPage === "Home" && <Home setCurrentPage={setCurrentPage} />}
       {currentPage === "About" && <About />}
       {currentPage === "Portfolio" && <Portfolio />}
       {currentPage === "Contact" && <Contact />}
