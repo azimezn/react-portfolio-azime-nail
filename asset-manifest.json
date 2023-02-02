@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/react-portfolio-azime-nail/static/css/main.073c9b0a.css",
-    "main.js": "/react-portfolio-azime-nail/static/js/main.5b32c0fe.js",
+    "main.css": "/react-portfolio-azime-nail/static/css/main.9ffb3724.css",
+    "main.js": "/react-portfolio-azime-nail/static/js/main.d076ebe3.js",
     "static/js/787.fdf3031f.chunk.js": "/react-portfolio-azime-nail/static/js/787.fdf3031f.chunk.js",
-    "static/media/logo.svg": "/react-portfolio-azime-nail/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/soup-or-sandwich-screenshot.png": "/react-portfolio-azime-nail/static/media/soup-or-sandwich-screenshot.1a9e0f11d987eb728206.png",
+    "static/media/recent-photo.png": "/react-portfolio-azime-nail/static/media/recent-photo.c2dd5ac5539470ef73e9.png",
+    "static/media/monthly-calendar-screenshot.png": "/react-portfolio-azime-nail/static/media/monthly-calendar-screenshot.744467532d361df29e0c.png",
+    "static/media/azime-nail-portfolio-screenshot.png": "/react-portfolio-azime-nail/static/media/azime-nail-portfolio-screenshot.ce17ef7beef3db63873f.png",
+    "static/media/header-cartoon-lavender.jpg": "/react-portfolio-azime-nail/static/media/header-cartoon-lavender.618bc5436052fb450373.jpg",
+    "static/media/prework-study-guide-screenshot.png": "/react-portfolio-azime-nail/static/media/prework-study-guide-screenshot.b280b54d336dcc14692e.png",
+    "static/media/tech-blog-screenshot.png": "/react-portfolio-azime-nail/static/media/tech-blog-screenshot.23b0b6626cea6d4e96a8.png",
+    "static/media/instagram-icon.png": "/react-portfolio-azime-nail/static/media/instagram-icon.1311da613ef132f9f3bd.png",
+    "static/media/note-taker-screenshot.png": "/react-portfolio-azime-nail/static/media/note-taker-screenshot.08cae3117cf3704b3c0d.png",
     "index.html": "/react-portfolio-azime-nail/index.html",
-    "main.073c9b0a.css.map": "/react-portfolio-azime-nail/static/css/main.073c9b0a.css.map",
-    "main.5b32c0fe.js.map": "/react-portfolio-azime-nail/static/js/main.5b32c0fe.js.map",
+    "main.9ffb3724.css.map": "/react-portfolio-azime-nail/static/css/main.9ffb3724.css.map",
+    "main.d076ebe3.js.map": "/react-portfolio-azime-nail/static/js/main.d076ebe3.js.map",
     "787.fdf3031f.chunk.js.map": "/react-portfolio-azime-nail/static/js/787.fdf3031f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.5b32c0fe.js"
+    "static/css/main.9ffb3724.css",
+    "static/js/main.d076ebe3.js"
   ]
 }
