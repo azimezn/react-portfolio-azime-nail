@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import recentPhoto from '../images/recent-photo.png'
 // bootstrap
 import Button from 'react-bootstrap/Button';
 
 const About = ({ setCurrentPage }) => {
+
+  const [nopeButton, setNopeButton] = useState(false);
+
   return (
     <div className="aboutme">
       <h2>About Me</h2>
@@ -18,7 +21,8 @@ const About = ({ setCurrentPage }) => {
         {/* {' '} is adding space */}
         <Button variant="outline-success" onClick={() => setCurrentPage("Contact")}>yes!</Button>{' '}
         {/* ??? show sad face next to the button when clicked */}
-        <Button variant="outline-danger">nope</Button>{' '}
+        <Button variant="outline-danger" onClick={() => setNopeButton(true)}>nope</Button>{' '}
+        {nopeButton && <p>okay...</p>}
       </section>
     </div>
   )
