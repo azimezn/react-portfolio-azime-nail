@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiFillGithub } from 'react-icons/ai'
 import { projects } from '../info'
 // bootstrap
 import Container from 'react-bootstrap/Container';
@@ -13,7 +14,7 @@ const Portfolio = () => {
         <Row>
           {projects.map(item => (
             <Col>
-              <h3>{item.name}</h3>
+              <h3>{item.name} <a href={item.githubLink} target="_blank" rel="noreferrer"><AiFillGithub/></a></h3>
               <p>{item.description}</p>
               <a href={item.deployedLink} target="_blank" rel="noreferrer">
                 <img className="project-screenshots" src={item.source} alt={item.alt} /></a>
