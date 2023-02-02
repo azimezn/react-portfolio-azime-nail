@@ -11,5 +11,9 @@ import souporsandwichScreenshot from '../images/soup-or-sandwich-screenshot.png'
 import portfolioScreenshot from '../images/azime-nail-portfolio-screenshot.png';
 import monthlyCalendarScreenshot from '../images/monthly-calendar-screenshot.png';
 import preworkScreenshot from '../images/prework-study-guide-screenshot.png';
+import techblogScreenshot from '../images/tech-blog-screenshot.png'
+import notetakerScreenshot from '../images/note-taker-screenshot.png'
 
-export { emailIcon, githubIcon, instagramIcon, twitterIcon, youtubeIcon, linkedinIcon, souporsandwichScreenshot, portfolioScreenshot, monthlyCalendarScreenshot, preworkScreenshot }
+export { emailIcon, githubIcon, instagramIcon, twitterIcon, youtubeIcon, linkedinIcon, 
+    souporsandwichScreenshot, portfolioScreenshot, monthlyCalendarScreenshot, preworkScreenshot, 
+    techblogScreenshot, notetakerScreenshot }

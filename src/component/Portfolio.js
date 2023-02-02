@@ -13,9 +13,10 @@ const Portfolio = () => {
       <Container>
         <Row>
           {projects.map(item => (
-            <Col>
-              <h3>{item.name} <a href={item.githubLink} target="_blank" rel="noreferrer"><AiFillGithub/></a></h3>
+            <Col className="projects" md={5}>
+              <h3>{item.name} <a href={item.githubLink} target="_blank" rel="noreferrer"><AiFillGithub /></a></h3>
               <p>{item.description}</p>
+              <p>Technologies used: {item.technologies}</p>
               <a href={item.deployedLink} target="_blank" rel="noreferrer">
                 <img className="project-screenshots" src={item.source} alt={item.alt} /></a>
             </Col>

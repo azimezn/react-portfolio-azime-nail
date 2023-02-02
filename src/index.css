@@ -1,9 +1,3 @@
-/* :root {
-  --bg-color: #f9f1ec;
-  --purple-dark: #956bc6;
-  --purple-light: #d9c1e7;
-} */
-
 body {
   background: #f9f1ec !important;
   /* padding: 30px; */
@@ -63,7 +57,14 @@ footer {
   max-width: 150px;
   border: 5px;
   border-style: solid;
-  border-color: var(--purple-dark);
+  border-color: #956bc6;
+}
+
+.projects {
+  margin: 20px;
+  padding: 10px;
+  /* border: 1px dotted #d9c1e7; */
+  /* border-radius: 10px; */
 }
 
 .project-screenshots {
