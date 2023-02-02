@@ -15,6 +15,7 @@ function App() {
       {currentPage === "Portfolio" && <Portfolio />}
       {currentPage === "Contact" && <Contact />}
       {currentPage === "Resume" && <Resume />}
+      <br></br>
       <Footer />
     </>
   );

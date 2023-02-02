@@ -1,5 +1,6 @@
 body {
-  /* background-color: #f9ecf3; */
+  background: #f9f1ec !important;
+  padding: 30px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -13,34 +14,40 @@ code {
     monospace;
 }
 
-/* header {
+header h1 {
   padding: 20px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position: relative; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
   /* using a banner as a background image */
-  /* background: url("./images/header-cartoon-lavender.jpg") no-repeat center center; */
-  /* background-repeat: no-repeat;
+  background: url("./images/header-cartoon-lavender.jpg");
+  /* background-repeat: no-repeat; */
   background-size: contain;
   background-position: center;
-} */
-
-.icon {
-    width: 20%;
 }
 
 .recent-photo {
-    width: 20%;
-    min-width: 100px;
-    max-width: 150px;
-    border: 5px;
-    border-style: solid;
-    border-color: var(--purple-dark);
+  float: left;
+  margin: 0 20px 0 0;
+  width: 20%;
+  min-width: 100px;
+  max-width: 150px;
+  border: 5px;
+  border-style: solid;
+  border-color: var(--purple-dark);
+}
+
+/* .bio {
+  padding: 50px;
+} */
+
+.icon {
+  width: 20%;
 }
 
 .project-screenshots {
-    width: 100%;
-    border: 5px solid #d9c1e7;
-    border-radius: 10px;
+  width: 100%;
+  border: 5px solid #d9c1e7;
+  border-radius: 10px;
 }
 
 .project-screenshots:hover {
@@ -49,19 +56,19 @@ code {
 
 .new-project,
 .old-project {
-    padding: 0 25px 15px 15px;
-    border: 5px dotted var(--purple-dark);
-    border-radius: 10px;
-    margin: 10px;
+  padding: 0 25px 15px 15px;
+  border: 5px dotted var(--purple-dark);
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .new-project {
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .old-project {
-    width: 28%;
+  width: 28%;
 }
