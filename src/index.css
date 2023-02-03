@@ -63,8 +63,8 @@ footer {
 .projects {
   margin: 20px;
   padding: 10px;
-  /* border: 1px dotted #d9c1e7; */
-  /* border-radius: 10px; */
+  border: 1px dotted #d9c1e7;
+  border-radius: 10px;
 }
 
 .project-screenshots {
@@ -75,4 +75,26 @@ footer {
 
 .project-screenshots:hover {
   border-color: lightblue;
+}
+
+.resume h3 {
+  margin: 10px;
+  padding: 3px;
+  border: 3px solid black;
+  width: 150px;
+  height: 50px;
+  background-color: white;
+}
+
+.resume-box {
+  width: 90%;
+  padding: 10px;
+  border: 3px dotted black;
+  background-color: white;
+  margin: 10px;
+}
+
+.resume-box img {
+  width: 100%;
+  border: 1px solid black;
 }
