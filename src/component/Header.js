@@ -1,5 +1,6 @@
 import React from 'react';
 // bootstrap
+// import Nav from 'react-bootstrap/Nav';
 import Nav from 'react-bootstrap/Nav';
 
 const pages = ["About", "Portfolio", "Contact", "Resume"];
@@ -12,7 +13,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                 {/* maps through the pages and lists them */}
                 {pages.map(item => (
                     <Nav.Item key={item}>
-                        <Nav.Link onClick={() => setCurrentPage(item)}>{item}</Nav.Link>
+                        <Nav.Link onClick={() => setCurrentPage(item)} style={{ backgroundColor: currentPage === item ? "#f9f1ec" : "transparent" }}>{item}</Nav.Link>
                     </Nav.Item>
                 ))}
             </Nav>
@@ -21,3 +22,6 @@ const Header = ({ currentPage, setCurrentPage }) => {
 }
 
 export default Header
+
+
+
