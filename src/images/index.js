@@ -13,6 +13,7 @@ import monthlyCalendarScreenshot from '../images/monthly-calendar-screenshot.png
 import preworkScreenshot from '../images/prework-study-guide-screenshot.png';
 import techblogScreenshot from '../images/tech-blog-screenshot.png'
 import notetakerScreenshot from '../images/note-taker-screenshot.png'
+import taskSandwichScreenshot from '../images/task-sandwich-screenshot.png'
 
 // resume photos
 import uniGraduation from '../images/university-graduation.JPG';
@@ -20,4 +21,4 @@ import hsGraduation from '../images/high-school-graduation.JPG';
 
 export { emailIcon, githubIcon, instagramIcon, twitterIcon, youtubeIcon, linkedinIcon, 
     souporsandwichScreenshot, portfolioScreenshot, monthlyCalendarScreenshot, preworkScreenshot, 
-    techblogScreenshot, notetakerScreenshot, uniGraduation, hsGraduation }
+    techblogScreenshot, notetakerScreenshot, taskSandwichScreenshot, uniGraduation, hsGraduation }

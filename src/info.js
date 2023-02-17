@@ -1,8 +1,19 @@
-import { souporsandwichScreenshot, portfolioScreenshot, monthlyCalendarScreenshot, 
-    preworkScreenshot, techblogScreenshot, notetakerScreenshot } from './images';
+import {
+    souporsandwichScreenshot, portfolioScreenshot, monthlyCalendarScreenshot,
+    preworkScreenshot, techblogScreenshot, notetakerScreenshot, taskSandwichScreenshot
+} from './images';
 
 // portfolio projects
 const projects = [
+    {
+        name: "Task Sandwich",
+        description: " During the bootcamp, we realized one of the biggest struggles we were having was adequate communication and organization of larger-scaled projects. The purpose for creating this site was to address those issues while also delivering a fun reward system to keep people engaged. To that end, we created that rewards system based on sandwiches (i.e. if a member of the project works enough, they can recieve 'sandwiches' to use as credits for rewards in real life).",
+        technologies: "REACT, GraphQL, JsonWebToken, Mongoose, Bootsrap",
+        deployedLink: "https://task-sandwich.herokuapp.com/",
+        githubLink: "https://github.com/sam-lerner/task-sandwich",
+        source: taskSandwichScreenshot,
+        alt: "screenshot of the homepage of Task Sandwich"
+    },
     {
         name: "Soup or Sandwich",
         description: "This is my most recent project. A game where the user must choose a picture according to the instructions. The pictures consist of soup and sandwiches, or maybe not. The user can login to save their progress or score.",
@@ -11,15 +22,6 @@ const projects = [
         githubLink: "https://github.com/kendrameda/Soup-or-Sandwich",
         source: souporsandwichScreenshot,
         alt: "screenshot of the game Soup or Sandwich"
-    },
-    {
-        name: "Tech Blog",
-        description: "A tech blog where you can sign up, login, create/edit/delete a post, or comment on other posts.",
-        technologies: "Express.js, Express Handlebars, Sequelize, MySQL",
-        deployedLink: "https://azimezn.github.io/tech-blog-an/",
-        githubLink: "https://github.com/azimezn/tech-blog-an",
-        source: techblogScreenshot,
-        alt: "screenshot of the tech blog"
     },
     {
         name: "Note Taker",
