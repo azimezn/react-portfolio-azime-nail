@@ -51,7 +51,7 @@ const Contact = () => {
         <Form.Group as={Row} className="mb-3">
           <Form.Label column sm={1}>message:</Form.Label>
           <Col sm={2}>
-            <Form.Control as="textarea" className="form-input" id="message" type="text" name="message" onChange={handleChange} onBlur={handleBlur} required />
+            <Form.Control as="textarea" className="form-input" id="messageText" type="text" name="message" onChange={handleChange} onBlur={handleBlur} required />
           </Col>
           {error.show && error.name === "message" && <h1>{error.message}</h1>}
         </Form.Group>
