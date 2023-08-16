@@ -31,7 +31,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="contact container">
+    <div className="contact container" id="contactForm">
       <h2>Contact</h2>
       <Form className="form login-form ">
         <Form.Group as={Row} className="mb-3">
@@ -56,8 +56,8 @@ const Contact = () => {
           {error.show && error.name === "message" && <h1>{error.message}</h1>}
         </Form.Group>
         <Form.Group as={Row} className="mb-3">
-        <Col>
-          <Button type="submit">submit</Button>
+          <Col>
+            <Button type="submit">submit</Button>
           </Col>
         </Form.Group>
       </Form>
