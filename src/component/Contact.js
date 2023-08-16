@@ -52,9 +52,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact container" id="contactForm">
+    <div className="contact container">
       <h2>Contact</h2>
-      <Form className="form login-form ">
+      <Form className="form login-form" onSubmit={handleSubmit}>
         <Form.Group as={Row} className="mb-3">
           <Form.Label column sm={1}>name:</Form.Label>
           <Col sm={2}>
