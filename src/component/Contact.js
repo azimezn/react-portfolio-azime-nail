@@ -37,7 +37,7 @@ const Contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const form = event.target;
-    form.contact_number.value = Math.random() * 100000 | 0;
+    // form.contact_number.value = Math.random() * 100000 | 0;
 
     emailjs.sendForm('service_2yxx7o8', 'template_1hk8j1l', form)
       .then(function () {
