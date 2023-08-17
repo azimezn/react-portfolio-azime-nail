@@ -6,6 +6,9 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
+// initialize emailJS with the public key
+emailjs.init('iG9VxD9Wq1b0x012T');
+
 const Contact = () => {
 
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -33,22 +36,16 @@ const Contact = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-  
-    const serviceID = "service_2yxx7o8";
-    const templateID = "template_1hk8j1l";
-    const userID = "iG9VxD9Wq1b0x012T";
-  
-    try {
-      const response = await emailjs.send(serviceID, templateID, formData, userID);
-  
-      if (response.status === 200) {
-        console.log('Email sent successfully');
-      } else {
-        console.log('Failed to send email');
-      }
-    } catch (error) {
-      console.log('Error:', error);
-    }
+    const form = event.target;
+    form.contact_number.value = Math.random() * 100000 | 0;
+
+    emailjs.sendForm('service_2yxx7o8', 'template_1hk8j1l', form)
+      .then(function () {
+        console.log('SUCCESS!');
+      }, function (error) {
+        console.log('FAILED...', error);
+      });
+
   };
 
   return (
