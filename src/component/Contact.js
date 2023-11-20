@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 //bootstrap
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+
+// initialize emailJS with the public key
+emailjs.init('iG9VxD9Wq1b0x012T');
 
 const Contact = () => {
 
@@ -30,10 +34,24 @@ const Contact = () => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   }
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    // form.contact_number.value = Math.random() * 100000 | 0;
+
+    emailjs.sendForm('service_2yxx7o8', 'template_1hk8j1l', form)
+      .then(function () {
+        console.log('SUCCESS!');
+      }, function (error) {
+        console.log('FAILED...', error);
+      });
+
+  };
+
   return (
     <div className="contact container">
       <h2>Contact</h2>
-      <Form className="form login-form ">
+      <Form className="form login-form" onSubmit={handleSubmit}>
         <Form.Group as={Row} className="mb-3">
           <Form.Label column sm={1}>name:</Form.Label>
           <Col sm={2}>
@@ -56,8 +74,8 @@ const Contact = () => {
           {error.show && error.name === "message" && <h1>{error.message}</h1>}
         </Form.Group>
         <Form.Group as={Row} className="mb-3">
-        <Col>
-          <Button type="submit">submit</Button>
+          <Col>
+            <Button type="submit">submit</Button>
           </Col>
         </Form.Group>
       </Form>
