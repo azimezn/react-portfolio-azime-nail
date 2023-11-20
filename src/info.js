@@ -24,15 +24,6 @@ const projects = [
         alt: "screenshot of the game Soup or Sandwich"
     },
     {
-        name: "Tech Blog",
-        description: "This is my most recent project. A game where the user must choose a picture according to the instructions. The pictures consist of soup and sandwiches, or maybe not. The user can login to save their progress or score.",
-        technologies: "Express.js, Express Handlebars, Sequelize, MySQL",
-        deployedLink: "https://tech-blog-azn.herokuapp.com/",
-        githubLink: "https://github.com/azimezn/tech-blog-an",
-        source: techblogScreenshot,
-        alt: "screenshot of the Tech Blog"
-    },
-    {
         name: "Note Taker",
         description: "A note application where you can create new notes, read previous notes, and delete any notes.",
         technologies: "Express.js",
