@@ -20,7 +20,7 @@ https://azimezn.github.io/react-portfolio-azime-nail/
 
 You can click throught the pages on the navigation bar, contact me through a form, click on links to view my projects or reach out to me through other media.
 
-![screenshot of the tech blog](./src/images/screenshot.png)
+![screenshot of the ](./src/images/screenshot.png)
 
 ## Credits
 
